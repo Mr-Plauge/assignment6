@@ -17,7 +17,10 @@ html {
 }
 header{
   position: fixed;
+  z-index: 1000;
   width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0em;
 }
@@ -30,7 +33,8 @@ div.container{
   background-color: rgb(37, 34, 36);
 }
 div.wrapper{
-  width:  50%;
+  width:  80%;
+  max-width: 1500px;
   margin: auto;
 }
 li.displayName{
@@ -50,7 +54,8 @@ div.video{
   text-align: center;
 }
 .video video{
-  width: 50%;
+  width: 70%;
+  max-width: 1500px;
   pointer-events: none;
 }
 div.about{
@@ -71,13 +76,18 @@ div.projectModule{
 div.qualities{
   margin: auto;
   display: grid;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   gap: 0.5em;
   grid-template-columns: repeat(5, 1fr);
 }
 .qualities p{
   background-color: rgb(74, 46, 46);
-  padding: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-radius: 10px;
 }
 p.modding{
   background-color: rgb(151, 90, 147);
@@ -108,18 +118,16 @@ div.project{
   padding-bottom: 0.2em;
 }
 div.projectList{
-  width:  50%;
-  /*display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: rgb(255, 255, 255);
-  gap: 1em;*/
+  width:  80%;
+  max-width: 1500px;
   margin: auto;
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(3, 1fr);
 }
 div.contactList{
-  width:  50%;
+  width:  80%;
+  max-width: 1500px;
   margin: auto;
   display: grid;
   gap: 2em;
@@ -140,6 +148,29 @@ li{
 }
 img{
   width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(91, 91, 95);
+}
+div.projectImage{
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  border: 1px solid rgb(91, 91, 95);
+}
+.projectImage h1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 ul{
   display: flex;
