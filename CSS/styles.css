@@ -190,6 +190,32 @@ a{
   text-decoration: none;
   display: block;
 }
+.navOption, .navOption a{
+  flex-grow: 0.25;
+  -webkit-flex-grow: 0.25;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-radius: 10px;
+}
+.navOption:nth-of-type(2) a:hover {
+  background:rgb(211, 61, 96);
+}
+.navOption:nth-of-type(3) a:hover {
+  background:rgb(94, 135, 221);
+}
+.navOption:nth-of-type(4) a:hover {
+  background:rgb(151, 90, 147);
+}
+.navOption:nth-of-type(5) a:hover {
+  background:rgb(65, 163, 93);
+}
+.navOption:hover{
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
 p{
   text-decoration: none;
   display: block;
