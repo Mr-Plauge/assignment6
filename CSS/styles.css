@@ -44,6 +44,32 @@ li.displayName{
   text-align: left;
   flex: 8;
 }
+.navOption, .navOption a{
+  flex-grow: 0.25;
+  -webkit-flex-grow: 0.25;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-radius: 10px;
+}
+.navOption:nth-of-type(2) a:hover {
+  background:rgb(88, 174, 255);
+}
+.navOption:nth-of-type(3) a:hover {
+  background:rgb(88, 174, 255);
+}
+.navOption:nth-of-type(4) a:hover {
+  background:rgb(88, 174, 255);
+}
+.navOption:nth-of-type(5) a:hover {
+  background:rgb(88, 174, 255);
+}
+.navOption:hover{
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
 .displayName h1{
   font-size: 2em;
 }
@@ -117,6 +143,18 @@ div.project{
   font-size: 2em;
   padding-bottom: 0.2em;
 }
+div.projectImage{
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+div.projectImage:hover{
+  transform: scale(1.05);
+  z-index: 100;
+  border: 1px solid rgb(88, 174, 255);
+}
 div.projectList{
   width:  80%;
   max-width: 1500px;
@@ -125,6 +163,16 @@ div.projectList{
   gap: 2em;
   grid-template-columns: repeat(3, 1fr);
 }
+div.contact{
+  width: 100%;
+  padding: 1em;
+  margin: auto;
+  background-color: rgb(29, 23, 27);
+}
+.contact h1{
+  font-size: 2em;
+  padding-bottom: 0.2em;
+}
 div.contactList{
   width:  80%;
   max-width: 800px;
@@ -132,13 +180,6 @@ div.contactList{
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(5, 1fr);
-}
-.contactList a{
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  text-align: center;
-  font-size: 2em;
 }
 li{
   display: inline-block;
@@ -162,7 +203,7 @@ div.projectImage{
   border-radius: 10px;
   border: 1px solid rgb(91, 91, 95);
 }
-.projectImage h1 {
+.projectImage h1, .projectImage h2 {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -171,16 +212,17 @@ div.projectImage{
   border-radius: 0px 0px 10px 10px;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
-.projectImage h2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0px 0px 10px 10px;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+.projectImage:hover h1{
+  font-size: 1.6em;
+}
+.projectImage:hover h2{
+  font-size: 1.1em;
 }
 ul{
   display: flex;
@@ -189,32 +231,6 @@ ul{
 a{
   text-decoration: none;
   display: block;
-}
-.navOption, .navOption a{
-  flex-grow: 0.25;
-  -webkit-flex-grow: 0.25;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  border-radius: 10px;
-}
-.navOption:nth-of-type(2) a:hover {
-  background:rgb(211, 61, 96);
-}
-.navOption:nth-of-type(3) a:hover {
-  background:rgb(94, 135, 221);
-}
-.navOption:nth-of-type(4) a:hover {
-  background:rgb(151, 90, 147);
-}
-.navOption:nth-of-type(5) a:hover {
-  background:rgb(65, 163, 93);
-}
-.navOption:hover{
-  flex-grow: 1;
-  -webkit-flex-grow: 1;
 }
 p{
   text-decoration: none;
